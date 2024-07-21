@@ -17,7 +17,7 @@ import (
 // - high: the high part of the UUID as a 64-bit integer.
 // - low: the low part of the UUID as a 64-bit integer.
 //
-//nolint:mnd
+//nolint:mnd,varnamelen
 func UUID2DoubleInt(v uuid.UUID) (int64, int64) {
 	// Extract the bytes of the UUID and concatenate them to form the high and low integers.
 	high := int64(v[0]) | int64(v[1])<<8 | int64(v[2])<<16 | int64(v[3])<<24 |

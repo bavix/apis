@@ -3,16 +3,9 @@ run:
 linters:
   enable-all: true
   disable:
-    # turn on later
-    - godox
     # deprecated
     - gomnd
     - execinquery
-    # not relevant
-    - varnamelen
-    - wrapcheck
-    - paralleltest
-    - exhaustruct
 linters-settings:
   lll:
     line-length: 140
