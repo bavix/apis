@@ -21,6 +21,8 @@ type UUIDTestSuite struct {
 // The function calls the Run method of the Suite struct from the testify package
 // to run the tests for the UUIDTestSuite.
 func TestUuidTestSuite(t *testing.T) {
+	t.Parallel()
+
 	suite.Run(t, new(UUIDTestSuite))
 }
 
