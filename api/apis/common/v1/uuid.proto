@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package apis.common.v1;
+
+option go_package = "./apis/common/v1";
+
+// UUID is a message that represents a UUID.
+//
+// A UUID is composed of two 64-bit values, each representing a part of the UUID.
+// The high part is stored in the high field, and the low part is stored in the
+// low field.
+message UUID {
+    // The high part of the UUID.
+    //
+    // This field contains the high part of the UUID.
+    // It is a 64-bit value that is independent of the low part.
+    int64 high = 1;
+    // The low part of the UUID.
+    //
+    // This field contains the low part of the UUID.
+    // It is a 64-bit value that is independent of the high part.
+    int64 low = 2;
+}

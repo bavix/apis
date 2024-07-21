@@ -1,0 +1,17 @@
+name: buf-lint
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  buf-lint:
+    name: lint
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        go-version: [ '1.22' ]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: bufbuild/buf-setup-action@v1
+      - uses: bufbuild/buf-lint-action@v1
