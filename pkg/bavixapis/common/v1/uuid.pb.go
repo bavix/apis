@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.34.2
 // 	protoc        (unknown)
-// source: apis/common/v1/uuid.proto
+// source: bavixapis/common/v1/uuid.proto
 
 package v1
 
@@ -45,7 +45,7 @@ type UUID struct {
 func (x *UUID) Reset() {
 	*x = UUID{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_apis_common_v1_uuid_proto_msgTypes[0]
+		mi := &file_bavixapis_common_v1_uuid_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -58,7 +58,7 @@ func (x *UUID) String() string {
 func (*UUID) ProtoMessage() {}
 
 func (x *UUID) ProtoReflect() protoreflect.Message {
-	mi := &file_apis_common_v1_uuid_proto_msgTypes[0]
+	mi := &file_bavixapis_common_v1_uuid_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -71,7 +71,7 @@ func (x *UUID) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UUID.ProtoReflect.Descriptor instead.
 func (*UUID) Descriptor() ([]byte, []int) {
-	return file_apis_common_v1_uuid_proto_rawDescGZIP(), []int{0}
+	return file_bavixapis_common_v1_uuid_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *UUID) GetHigh() int64 {
@@ -88,36 +88,37 @@ func (x *UUID) GetLow() int64 {
 	return 0
 }
 
-var File_apis_common_v1_uuid_proto protoreflect.FileDescriptor
+var File_bavixapis_common_v1_uuid_proto protoreflect.FileDescriptor
 
-var file_apis_common_v1_uuid_proto_rawDesc = []byte{
-	0x0a, 0x19, 0x61, 0x70, 0x69, 0x73, 0x2f, 0x63, 0x6f, 0x6d, 0x6d, 0x6f, 0x6e, 0x2f, 0x76, 0x31,
-	0x2f, 0x75, 0x75, 0x69, 0x64, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x0e, 0x61, 0x70, 0x69,
-	0x73, 0x2e, 0x63, 0x6f, 0x6d, 0x6d, 0x6f, 0x6e, 0x2e, 0x76, 0x31, 0x22, 0x2c, 0x0a, 0x04, 0x55,
-	0x55, 0x49, 0x44, 0x12, 0x12, 0x0a, 0x04, 0x68, 0x69, 0x67, 0x68, 0x18, 0x01, 0x20, 0x01, 0x28,
-	0x03, 0x52, 0x04, 0x68, 0x69, 0x67, 0x68, 0x12, 0x10, 0x0a, 0x03, 0x6c, 0x6f, 0x77, 0x18, 0x02,
-	0x20, 0x01, 0x28, 0x03, 0x52, 0x03, 0x6c, 0x6f, 0x77, 0x42, 0x12, 0x5a, 0x10, 0x2e, 0x2f, 0x61,
-	0x70, 0x69, 0x73, 0x2f, 0x63, 0x6f, 0x6d, 0x6d, 0x6f, 0x6e, 0x2f, 0x76, 0x31, 0x62, 0x06, 0x70,
-	0x72, 0x6f, 0x74, 0x6f, 0x33,
+var file_bavixapis_common_v1_uuid_proto_rawDesc = []byte{
+	0x0a, 0x1e, 0x62, 0x61, 0x76, 0x69, 0x78, 0x61, 0x70, 0x69, 0x73, 0x2f, 0x63, 0x6f, 0x6d, 0x6d,
+	0x6f, 0x6e, 0x2f, 0x76, 0x31, 0x2f, 0x75, 0x75, 0x69, 0x64, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f,
+	0x12, 0x13, 0x62, 0x61, 0x76, 0x69, 0x78, 0x61, 0x70, 0x69, 0x73, 0x2e, 0x63, 0x6f, 0x6d, 0x6d,
+	0x6f, 0x6e, 0x2e, 0x76, 0x31, 0x22, 0x2c, 0x0a, 0x04, 0x55, 0x55, 0x49, 0x44, 0x12, 0x12, 0x0a,
+	0x04, 0x68, 0x69, 0x67, 0x68, 0x18, 0x01, 0x20, 0x01, 0x28, 0x03, 0x52, 0x04, 0x68, 0x69, 0x67,
+	0x68, 0x12, 0x10, 0x0a, 0x03, 0x6c, 0x6f, 0x77, 0x18, 0x02, 0x20, 0x01, 0x28, 0x03, 0x52, 0x03,
+	0x6c, 0x6f, 0x77, 0x42, 0x17, 0x5a, 0x15, 0x2e, 0x2f, 0x62, 0x61, 0x76, 0x69, 0x78, 0x61, 0x70,
+	0x69, 0x73, 0x2f, 0x63, 0x6f, 0x6d, 0x6d, 0x6f, 0x6e, 0x2f, 0x76, 0x31, 0x62, 0x06, 0x70, 0x72,
+	0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
-	file_apis_common_v1_uuid_proto_rawDescOnce sync.Once
-	file_apis_common_v1_uuid_proto_rawDescData = file_apis_common_v1_uuid_proto_rawDesc
+	file_bavixapis_common_v1_uuid_proto_rawDescOnce sync.Once
+	file_bavixapis_common_v1_uuid_proto_rawDescData = file_bavixapis_common_v1_uuid_proto_rawDesc
 )
 
-func file_apis_common_v1_uuid_proto_rawDescGZIP() []byte {
-	file_apis_common_v1_uuid_proto_rawDescOnce.Do(func() {
-		file_apis_common_v1_uuid_proto_rawDescData = protoimpl.X.CompressGZIP(file_apis_common_v1_uuid_proto_rawDescData)
+func file_bavixapis_common_v1_uuid_proto_rawDescGZIP() []byte {
+	file_bavixapis_common_v1_uuid_proto_rawDescOnce.Do(func() {
+		file_bavixapis_common_v1_uuid_proto_rawDescData = protoimpl.X.CompressGZIP(file_bavixapis_common_v1_uuid_proto_rawDescData)
 	})
-	return file_apis_common_v1_uuid_proto_rawDescData
+	return file_bavixapis_common_v1_uuid_proto_rawDescData
 }
 
-var file_apis_common_v1_uuid_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
-var file_apis_common_v1_uuid_proto_goTypes = []any{
-	(*UUID)(nil), // 0: apis.common.v1.UUID
+var file_bavixapis_common_v1_uuid_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
+var file_bavixapis_common_v1_uuid_proto_goTypes = []any{
+	(*UUID)(nil), // 0: bavixapis.common.v1.UUID
 }
-var file_apis_common_v1_uuid_proto_depIdxs = []int32{
+var file_bavixapis_common_v1_uuid_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type
 	0, // [0:0] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
@@ -125,13 +126,13 @@ var file_apis_common_v1_uuid_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for field type_name
 }
 
-func init() { file_apis_common_v1_uuid_proto_init() }
-func file_apis_common_v1_uuid_proto_init() {
-	if File_apis_common_v1_uuid_proto != nil {
+func init() { file_bavixapis_common_v1_uuid_proto_init() }
+func file_bavixapis_common_v1_uuid_proto_init() {
+	if File_bavixapis_common_v1_uuid_proto != nil {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file_apis_common_v1_uuid_proto_msgTypes[0].Exporter = func(v any, i int) any {
+		file_bavixapis_common_v1_uuid_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*UUID); i {
 			case 0:
 				return &v.state
@@ -148,18 +149,18 @@ func file_apis_common_v1_uuid_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_apis_common_v1_uuid_proto_rawDesc,
+			RawDescriptor: file_bavixapis_common_v1_uuid_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   1,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_apis_common_v1_uuid_proto_goTypes,
-		DependencyIndexes: file_apis_common_v1_uuid_proto_depIdxs,
-		MessageInfos:      file_apis_common_v1_uuid_proto_msgTypes,
+		GoTypes:           file_bavixapis_common_v1_uuid_proto_goTypes,
+		DependencyIndexes: file_bavixapis_common_v1_uuid_proto_depIdxs,
+		MessageInfos:      file_bavixapis_common_v1_uuid_proto_msgTypes,
 	}.Build()
-	File_apis_common_v1_uuid_proto = out.File
-	file_apis_common_v1_uuid_proto_rawDesc = nil
-	file_apis_common_v1_uuid_proto_goTypes = nil
-	file_apis_common_v1_uuid_proto_depIdxs = nil
+	File_bavixapis_common_v1_uuid_proto = out.File
+	file_bavixapis_common_v1_uuid_proto_rawDesc = nil
+	file_bavixapis_common_v1_uuid_proto_goTypes = nil
+	file_bavixapis_common_v1_uuid_proto_depIdxs = nil
 }
