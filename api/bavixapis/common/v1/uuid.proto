@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-package apis.common.v1;
+package bavixapis.common.v1;
 
-option go_package = "./apis/common/v1";
+option go_package = "./bavixapis/common/v1";
 
 // UUID is a message that represents a UUID.
 //
