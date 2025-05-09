@@ -35,8 +35,6 @@ func TestUuidTestSuite(t *testing.T) {
 // from the testify package to run a subtest for each case. Inside the subtest,
 // the function calls the UUID2DoubleInt function and checks if the returned
 // values are equal to the expected values.
-//
-//nolint:funlen
 func (s *UUIDTestSuite) TestUUID2DoubleInt() {
 	// Define struct for expected values
 	//
